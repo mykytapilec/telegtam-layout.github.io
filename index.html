@@ -4,62 +4,121 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
-	<div class="group-chat">Group chat 99</div>
-
-	<div class="chat__body">
-	  <div class="messages">
-	  	<div class="coming">
-	  		<div class="round" style="background: pink">U</div>
-		    <div class="message droplet">
-		      <div class="message__text">
-		      	<div class="user" style="color: pink">User 1</div>
-		        <div class="message__text__content">Hello
-		          <div class="message__time">21:30</div>
-		        </div>
-		      </div>
-	    	</div>
-	  	</div>
-	  	
-	  	<div class="coming">
-		  	<div class="round" style="background: blue">U</div>
-		    <div class="message droplet">
-		      <div class="message__text">
-		      	<div class="user" style="color: blue">User 2</div>
-		        <div class="message__text__content">Hi
-		          <div class="message__time">21:33</div>
-		        </div>
-		      </div>
-		    </div>
+	<div class="container">
+		<div class="group-chat">
+			<i class="material-icons" id="params">dehaze</i>
+			<span class="telegram">Telegram</span>
+			<span class="name">Group chat 99</span>
+			<span class="quantity">4 members</span>
+			<i class="material-icons">search</i>
+			<i class="material-icons">more_vert</i>
 		</div>
 
-	    <div class="message my-message droplet">
-	      <div class="message__text">
-	        <div class="message__text__content">Yo
-	          <div class="message__time">21:35</div>
-	        </div>
-	      </div>
-	    </div>
+		<div class="chat__body">
+			<div class="contact-list">
+				<div class="general-search">
+					<i class="material-icons">search</i>
+					<span class="search-word">Search</span>
+				</div>
+				<div class="coming">
+					<div class="round" style="background: black">G</div>
+						<div class="message__text">
+							<div class="user" style="color: black">Group Chat 99</div>
+							<div class="message__text__content">
+								<span style="color: blue">User 3:</span>
+								<span>how are you?</span>
+								<div class="message__time">21:39</div>
+							</div>
+						</div>
+				</div>
+				<div class="coming">
+					<div class="round" style="background: pink">U</div>
+						<div class="message__text">
+							<div class="user" style="color: pink">User 1</div>
+							<div class="message__text__content">
+								<span>&#128513;</span>
+								<div class="message__time">20:50</div>
+							</div>
+						</div>
+				</div>
+				<div class="coming">
+					<div class="round" style="background: green">U</div>
+						<div class="message__text">
+							<div class="user" style="color: green">User 3</div>
+							<div class="message__text__content">
+								<span style="color: lightblue">Photo</span>
+								<div class="message__time">20:03
+								</div>
+							</div>
+						</div>
+				</div>
 
-	    <div class="message__image__text">
-	    	<img class="message__image__content" src="hello.png"/>
-	   	</div>
-
-	    <div class="coming">
-		  	<div class="round" style="background: green">U</div>
-		    <div class="message droplet">
-		      <div class="message__text">
-		      	<div class="user" style="color: green">User 3</div>
-		        <div class="message__text__content"> how are you?
-		          <div class="message__time">21:39</div>
-		        </div>
-		      </div>
-		    </div>
+			</div>
+			<div class="messages">
+				<div class="coming">
+					<div class="round" style="background: pink">U</div>
+						<div class="message__text">
+							<div class="user" style="color: pink">User 1</div>
+							<div class="message__text__content">
+								<a href="https://www.youtube.com/embed/tgbNymZ7vqY">https://www.youtube.com/embed/tgbNymZ7vqY</a>
+								<br>
+								<div class="video-part">
+									<span style="color: lightgray">YouTube</span>
+									<br>
+									<div class="video-text">
+										<p>Bohemian Rhapsody | Muppet Music Video | The Muppets</p>
+									</div>
+									<iframe width="420" height="315"
+									src="https://www.youtube.com/embed/tgbNymZ7vqY">
+									</iframe>
+								</div>
+								<div class="message__time">21:30</div>
+							</div>
+						</div>
+				</div>
+			  
+				<div class="coming">
+					<div class="round" style="background: blue">U</div>
+						<div class="message__text">
+							<div class="user" style="color: blue">User 2</div>
+							<div class="message__text__content">
+								<a href="https://www.onliner.by/">https://www.onliner.by/</a>
+								<div class="message__time">21:33</div>
+							</div>
+						</div>
+				</div>
+	
+				<div class="coming">
+					<div class="round" style="background: red">Y</div>
+					<div class="message__text">
+						<div class="user" style="color: red">You</div>
+						<div class="message__text__content">Yo
+							<div class="message__time">21:35</div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="message__image__text">
+					<img class="message__image__content" src="hello.png"/>
+				</div>
+	
+				<div class="coming">
+					<div class="round" style="background: green">U</div>
+					<div class="message__text">
+						<div class="user" style="color: green">User 3</div>
+						<div class="message__text__content"> how are you?
+							<div class="message__time">21:39</div>
+						</div>
+					</div>
+				</div>
+		  </div>
 		</div>
-	  </div>
 	</div>
+
 	<svg height="0" width="0">
 	  <defs>
 	    <clipPath id="left-droplet">

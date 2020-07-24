@@ -1,6 +1,9 @@
-*, :after, :before {
+* {
   box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
 }
+
 html, body {
   width: 100%;
   height: 100%;
@@ -8,17 +11,58 @@ html, body {
   margin: 0;
   font-family: arial;
   font-size: 13px;
+  background-image: url("https://raw.githubusercontent.com/telegramdesktop/tdesktop/dev/Telegram/Resources/art/bg_initial.jpg");
 }
+
+
+.container {
+  width: 1200px;
+}
+
 .chat__body {
   display: flex;
-  width: 100%;
   height: 100%;
-  background-image: url("https://raw.githubusercontent.com/telegramdesktop/tdesktop/dev/Telegram/Resources/art/bg_initial.jpg");
+  background: white;
   background-position-y: -54px;
   background-attachment: fixed;
 }
+
+.contact-list {
+  float: left;
+  background: white;
+  width: 380px;
+  border-right: 0.5mm solid lightgray;
+}
+
+.general-search{
+  width: 360px;
+  height: 40px;
+  background-color: lightgray;
+  color:  #a0acb6;
+  margin-top: 10px;
+  border-radius: 0.2em;
+}
+
+.general-search .material-icons{
+  margin-top: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.video-part {
+  border-left: 0.5mm solid #006699;
+  padding-left: 10px;
+  margin-left: 24px;
+  margin-top: 5px;
+}
+
+.video-text{
+  color: #006699;
+  font-weight: bold;
+  font-size: 16;
+}
+
 .messages {
-  display: flex;
   flex-direction: column;
   flex-grow: 1;
   margin-left: 16px;
@@ -71,18 +115,13 @@ html, body {
   align-self: flex-start;
   display: flex;
   align-items: center;
-    
   position: relative;
-  
   min-height: 30px;
-  
   background-color: #fff;
   margin-bottom: 8px;
   border-radius: 6px;
   margin-top: 4px;
-  
   z-index: 2;
-  
   box-shadow: 0 2px 1px 0 rgba(160,172,182,.5);
 }
 
@@ -90,42 +129,6 @@ html, body {
   align-self: flex-end;
   background-color: #effdde;
   box-shadow: 0 2px 1px 0 rgba(93,196,82,.5);
-}
-
-.message.droplet:before {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: -8px;
-  width: 12px;
-  height: 1px;
-  background-color: inherit;
-  z-index: 1;
-  box-shadow: 0px 1px 1px 1px rgba(160,172,182,.5);
-  float: right;
-}
-.message.droplet:after {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: -10px;
-  width: 16px;
-  height: 10px;
-  clip-path: url(#left-droplet);
-  background-color: inherit;
-  z-index: 1;
-  box-shadow: 0 2px 1px 0 rgba(160,172,182,.5);
-}
-
-.message.my-message.droplet:before {
-  right: -8px;
-  left: initial;
-  box-shadow: 0px 1px 1px 1px rgba(93,196,82,.5);
-}
-.message.my-message.droplet:after {
-  right: -10px;
-  left: initial;
-  clip-path: url(#right-droplet);
 }
 
 .message__text,
@@ -147,22 +150,23 @@ html, body {
 }
 .message__image__content {
   border-radius: 6px;
-  margin-bottom: -3px;
   max-width: 300px;
-  margin-left: 30px;
-  margin-bottom: 4px;
+  margin: 5px;
+  padding: 5px;
+
 }
 
 .message__time {
   display: inline-block;
   float: right;
   padding-top: 4px;
-  padding-bottom: 4px;
+  padding-bottom: 16px;
   padding-left: 14px;
   text-align: right;
   font-size: 10px;
   color: #a0acb6;
 }
+
 .my-message .message__time {
   color: #5dc452;
 }
@@ -184,8 +188,9 @@ html, body {
 }
 
 .user {
-  font-size: 10px;
-  margin-bottom: 4px;
+  font-size: 12px;
+  margin-bottom: 8px;
+  padding-top: 4px;
 }
 
 .round {
@@ -204,13 +209,39 @@ html, body {
 
 .coming{
   align-self: flex-start;
+  padding: 5px;
+  margin: 5px;
 }
 
 .group-chat{
-  height: 60px;
+  height: 50px;
   background: #006699;
   color: white;
-  text-align: center;
-  font-size: 20px;
   line-height: 3em;
 }
+
+.group-chat #params {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.group-chat .telegram{
+  font-size: 14px;  
+  margin-left: 50px;
+  margin: 30px;
+}
+
+.group-chat .name{
+  font-size: 14px;  
+  font-weight: bold;
+  margin-left: 210px;
+}
+
+.group-chat .quantity{
+  font-size: 12px;  
+  color: lightblue;
+  margin-left: 10px;
+  margin-right: 550px;
+}
+
+
